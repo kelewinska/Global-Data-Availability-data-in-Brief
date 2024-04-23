@@ -53,7 +53,7 @@ dataL <- dbL[,..b]
 dataS <- dbS[,..b]
 dataP <- dbP[,..bR] 
 
-# Lon and Lat are switched for Landsat
+# Lon and Lat 
 ras.xmn<-min(dbL$Lat)
 ras.xmx<-max(dbL$Lat)
 ras.ymn<-min(dbL$Lon)
