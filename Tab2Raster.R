@@ -28,7 +28,7 @@ td <- '2018_06_16' # target date for the data used in the Figure 1. Can be modif
 
 
 # :OUTPUTS: #
-outRas = paste0(inDir,'/Geotiff_example.jpg') #if not changed the figure will be written out to the inDir
+outRas = paste0(inDir,'/Geotiff_example.TIF') #if not changed the figure will be written out to the inDir
 
 
 # :CODE: #
