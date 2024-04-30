@@ -4,6 +4,8 @@ Codes to accompany the Lewińska et al. (2024a) paper featuring the Global Data 
 The prerequisite to executing the codes is the local copy of the Dataset featured in the publication. 
 
 - `Figure_1.R` code generates [*Figure 1*](https://github.com/kelewinska/Global-Data-Availability-data-in-Brief/blob/main/Figure_1.jpg) featured in the Lewińska et al. (2024a) paper; 
+- `Figure_2.R` code generating [*Figure 2*](https://github.com/kelewinska/Global-Data-Availability-data-in-Brief/blob/main/Figure_2.jpg) featured in the Lewińska et al. (2024a) paper; 
+- `proportionOfDataPixels.js` code deriving global statistics on proportion of acquired observations needed in the ` Figure_2.R` script.
 - `Tab2Raster.R` showcases the casting of the tabulated data from Lewińska et al. (2024b) as a georeferenced raster in the EPSG:4326 projection. A correctly casted resulting raster will have the following extend and projection definition:
 ```
 Driver: GTiff/GeoTIFF
