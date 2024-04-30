@@ -32,11 +32,10 @@ inDir <- '/.../' # path to the folder comprising the https://doi.org/10.5061/dry
 year <- '2020' # target year [YYYY]
 day <- '15' # 15th of each month [dd]
 
-# values derived using the proportionOfDataPixels.js
+# values derived and collected using the proportionOfDataPixels.js
 S2_acqProp2020 <- c(0.211,0.255,0.270,0.276,0.276,0.274,0.273,0.270,0.278,0.268,0.223,0.199)
 LND_acqProp2020 <- c(0.126,0.143,0.156,0.174,0.175,0.185,0.176,0.185,0.175,0.158,0.139,0.117)
-LND_acqProp2000 <- c(0.061,0.077,0.091,0.101,0.108,0.112,0.101,0.112,0.110,0.104,0.083,0.072)
-LND_acqProp1990 <- c(0.029,0.039,0.045,0.057,0.071,0.049,0.052,0.052,0.055,0.058,0.035,0.039)
+
 
 # :OUTPUTS: #
 outDir = inDir  #if not changed the figure will be written out to the inDir
@@ -69,38 +68,8 @@ for(m in months){
 
 TAB2020 <- rbind(cbind(TAB2020l, LND_acqProp2020),cbind(TAB2020s, S2_acqProp2020))
 
-TAB2000 <- c()
 
-for(m in months){
-  
-  stL <- dbL %>% dplyr::select(starts_with(paste0('L_2000_',m,'_',day)) )
-
-  propL = sum(stL>=1)/dim(stL)[1]
-
-  tab <- c('Landsat 2000',m, propL)
-  
-  TAB2000 <- rbind(TAB2000, tab)
-}
-
-TAB2000 <- cbind(TAB2000,LND_acqProp2000)
-
-
-TAB1990 <- c()
-
-for(m in months){
-  
-  stL <- dbL %>% dplyr::select(starts_with(paste0('L_1990_',m,'_',day)) )
-  
-  propL = sum(stL>=1)/dim(stL)[1]
-  
-  tab <- c('Landsat 1990',m, propL)
-  
-  TAB1990 <- rbind(TAB1990, tab)
-}
-
-TAB1990 <- cbind(TAB1990,LND_acqProp1990)
-
-TAB <- rbind(TAB1990,TAB2000,TAB2020)
+TAB <- TAB2020
 
 colnames(TAB) <- c('Dataset', 'month','data_prop','acqProp')
 
