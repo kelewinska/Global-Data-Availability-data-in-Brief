@@ -1,6 +1,6 @@
 # Global Data Availability: Data in Brief
 
-Codes to accompany the Lewińska et al. (2024a) paper featuring the Global Data *Global overview of cloud-, snow-, and shade-free Landsat (1982-2023) and Sentinel-2 (2015-2023) data* dataset (Lewińska et al., 2024b).
+Codes to accompany the Lewińska et al. (2004)[1] paper featuring the Global Data *Global overview of cloud-, snow-, and shade-free Landsat (1982-2023) and Sentinel-2 (2015-2023) data* featuring the dataset Lewińska et al., (2024)[2].
 The prerequisite to executing the codes is the local copy of the Dataset featured in the publication. 
 
 - `Figure_1.R` code generates [*Figure 1*](https://github.com/kelewinska/Global-Data-Availability-data-in-Brief/blob/main/Figure_1.jpg) featured in the Lewińska et al. (2024a) paper; 
@@ -39,11 +39,16 @@ Lower Right ( 179.6633488, -59.1416633) (179d39'48.06"E, 59d 8'29.99"S)
 Center      (  -0.0666512,  12.1383367) (  0d 3'59.94"W, 12d 8'18.01"N)
 ```
 ## Conditions of use
-Upon using the dataset and the accompanying materials please cite Lewińska et al. (2024a) and Lewińska et al. (2024b).
+Upon using the dataset and the accompanying materials please cite Lewińska et al. (2024) [1,2].
 
 ## References:
-* Lewińska K.E., Ernst S., Frantz D., Leser U., Hostert P., (2024a) Global Overview of Usable Landsat and Sentinel-2 Data for 1982–2023. (under review in Data in Brief) Available as preprint: https://www.preprints.org/manuscript/202402.1169/v1 
+* [1] Lewińska K.E., Ernst S., Frantz D., Leser U., Hostert P., (2024) Global Overview of Usable Landsat and Sentinel-2 Data for 1982–2023. Data in Brief (2024), [https://doi.org/10.1016/j.dib.2024.111054](https://doi.org/10.1016/j.dib.2024.111054)
 Interactive GEE App to explore the dataset: https://katarzynaelewinska.users.earthengine.app/view/worlddataaval
-* Lewińska K.E., Ernst S., Frantz D., Leser U., Hostert P. (2024b). Global overview of cloud-, snow-, and shade-free Landsat (1982-2023) and Sentinel-2 (2015-2023) data [Dataset]. Dryad. https://doi.org/10.5061/dryad.gb5mkkwxm
+* [2] Lewińska K.E., Ernst S., Frantz D., Leser U., Hostert P. (2024). Global overview of cloud-, snow-, and shade-free Landsat (1982-2023) and Sentinel-2 (2015-2023) data [Dataset]. Dryad. https://doi.org/10.5061/dryad.gb5mkkwxm
 
+##
+#### Landsat data availability
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/kelewinska/Global-Data-Availability-data-in-Brief/blob/main/LND_ts84-22.gif"> 
+</p>
 
