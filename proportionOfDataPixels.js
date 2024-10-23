@@ -21,7 +21,7 @@
 
 // ### INPUTS ### \\
 
-var points = ee.FeatureCollection("users/kelewinska/HU/Grid_18_selecton_regions");
+var points = ee.FeatureCollection("users/.../..."); // path to the asset comprising grid points 
 
 var  AOI = points.filter(ee.Filter.gt('id', 0))
 print('Number of points: ', AOI.size())
